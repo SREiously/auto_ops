@@ -1,8 +1,0 @@
----
-- hosts: localhost
-  roles:
-    - role: alter_service
-      vars:
-        - service_name: cron
-        - service_state: restarted
-
