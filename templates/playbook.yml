@@ -1,0 +1,9 @@
+---
+- name: {{ action_name }}
+  hosts: {{ inv_group }}
+  roles:
+    {% for role_name, role_data in roles.items() %}- role: {{ role_name }}
+      vars:
+        {% for name, value in role_data.items() %}{{ name }}: {{ value }}
+        {% endfor -%}
+    {% endfor -%}

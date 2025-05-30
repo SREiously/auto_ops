@@ -1,0 +1,2 @@
+service_name: "str"
+service_state: ["stopped", "restarted", "started"]
